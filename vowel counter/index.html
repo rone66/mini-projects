@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background: #9DF1DF;
+            font-family: 'Poppins', sans-serif;
+            height: 100vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container{
+            width: 50%;
+            height: 70%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            background: #8DCBE6;
+            border-radius: 25px;
+        }
+        .container div{
+            width: 65%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .container h1{
+            font-size: 40px;
+        }
+        .container div h3{
+            font-size: 25px;
+        }
+        .container div input{
+            padding: 10px 20px;
+            border-radius: 5px;
+            outline: none;
+            border: transparent;
+        }
+        .container button{
+            padding: 10px 25px;
+            font-size: 25px;
+            background: #FFEA20;
+            border: transparent;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .container p{
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>vowel counter</h1>
+        <div>
+            <h3>Person Name</h3><input type="text" name="" id="name">
+        </div>
+        <button id="btn">check</button>
+        <p id="res"></p>
+    </div>
+    <script>
+        let a=document.querySelector("#name");
+        document.querySelector("#btn").addEventListener('click',function(){
+            let v=0;
+            let b=a.value.toLowerCase();
+            for (let i = 0; i < b.length; i++) {
+                if(b[i]=='a'||b[i]=='e'||b[i]=='i'||b[i]=='o'||b[i]=='u'){
+                    v++;
+                }
+            } 
+            document.querySelector("#res").innerHTML="Vowel count : "+ v;
+        })
+    </script>
+</body>
+</html>

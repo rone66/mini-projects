@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>password validator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="leftSection">
+            <div class="logoSection">
+                <img src="./asset/logo.png" alt="" srcset="">
+                <h1>LOGO</h1>
+            </div>
+            <div class="imgSection">
+                <img src="./asset/login2.jpg" alt="" srcset="">
+            </div>
+        </div>
+        <div class="rightSection">
+            <h1>Welcome Back :&#41</h1>
+            <p>To keep connected with us login with your personal informarion by email address and password</p>
+            <div class="inputSection">
+                <div class="email">
+                    <img src="./asset/email.png" alt="" srcset="" class="icon">
+                    <input type="text" name="" id="email" placeholder="Enter Your Email" onkeypress="validation()">
+                    <img src="./asset/accept.png" alt="" srcset="" id="greentick1">
+                </div>
+                <br>
+                
+                <div class="password">
+                    <img src="./asset/lock.png" alt="" srcset="" class="icon">
+                    <input type="password" name="" id="pass" placeholder="Enter Password" onkeypress="passValidation()">
+                    <img src="./asset/accept.png" alt="" srcset="" id="greentick2">
+                </div>
+                <p>*password should contain 8 character </p>
+            </div>
+            <div class="forget"><a href="">Forget password?</a></div>
+            <div class="btnSection">
+                <button id="login">Login</button>
+                <button>Create Account</button>
+            </div>
+            <div class="footer">
+                <p>or Join with</p>
+                <ul>
+                    <li><img src="./asset/google.png" alt="" class="sm"></li>
+                    <li><img src="./asset/Facebook_f_logo_(2021).svg.webp" alt="" class="sm"></li>
+                    <li><img src="./asset/twitter-icon.svg" alt="" class="sm"></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
