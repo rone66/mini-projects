@@ -1,0 +1,114 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    width: 60%;
+    height: 55%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    gap: 2%;
+    background: #F9F7F7;
+    box-shadow: 0px 0px 20px rgb(168, 163, 163);
+    
+}
+#logo{
+    width: 50%;
+    height: 100%;
+    
+}
+#img{
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+.container{
+    width: 70%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#category{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fff;
+}
+.dropdown{
+    width: 60%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+.dropdown div input{
+    width: 70%;
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+.option{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    display: none;
+}
+.option div{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    cursor: pointer;
+}
+.option div:hover{
+    background: #000;
+    color: #fff;
+}
+#day{
+    width: 40%;
+    margin-left: 10%;
+    align-items: center;
+    justify-content: center;
+}
+#days {
+    width: 20%;
+    padding: 1% 2%;
+    outline: none;
+}
+.btnSection{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+button{
+    padding: 7px 30px;
+    border-radius: 5px;
+    border: transparent;
+    font-size: 20px;
+    background: #000;
+    color:#fff;
+    cursor: pointer;
+}
